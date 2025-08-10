@@ -1,0 +1,36 @@
+<!-- static/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mock Draft</title>
+  <script defer src="/static/app.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-xl font-semibold tracking-tight">Mock Draft</h1>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6 space-y-6">
+    <!-- Controls -->
+    <section id="controls" class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-wrap gap-3 items-center">
+      <label class="text-sm font-medium text-slate-700">Draft Slot (1–12)</label>
+      <input id="slot" type="number" min="1" max="12" value="4" class="w-24 rounded-lg border-slate-300 focus:border-indigo-500 focus:ring-indigo-500" />
+      <button id="start" class="inline-flex items-center gap-2 rounded-lg bg-indigo-600 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-indigo-500 active:bg-indigo-700 transition">Start Draft</button>
+      <button id="restart" class="inline-flex items-center gap-2 rounded-lg bg-red-600 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-red-500 active:bg-red-700 transition">Restart Draft</button>
+      <div id="status" class="ml-auto text-sm text-slate-600"></div>
+    </section>
+
+    <!-- Board -->
+    <section id="board" class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 overflow-x-auto"></section>
+
+    <!-- Top 20 -->
+    <section id="top20" class="bg-white border border-slate-200 rounded-xl shadow-sm p-4"></section>
+  </main>
+
+</body>
+</html>

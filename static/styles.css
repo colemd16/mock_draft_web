@@ -1,0 +1,40 @@
+/* static/styles.css */
+body { font-family: system-ui, sans-serif; margin: 24px; }
+table.board { border-collapse: collapse; width: 100%; table-layout: fixed; }
+.board th, .board td { border: 1px solid #ccc; padding: 8px; text-align: center; white-space: normal; overflow-wrap: anywhere; position: relative; vertical-align: top; min-height: 120px; box-sizing: border-box; }
+.pool { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.pool .meta { color: #666; margin-left: 6px; }
+button.pick { width: 100%; padding: 8px 10px; text-align: left; border: 1px solid #ddd; background:#fff; border-radius:8px; cursor:pointer; }
+button.pick:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Colors */
+.qb  { color:#d7263d; }
+.rb  { color:#1b9e77; }
+.wr  { color:#e6b800; }
+.te  { color:#7e57c2; }
+.k   { color:#ff8c00; }
+.dst { color:#fafafa; }
+/* Helpers for board cell content */
+.board .player-name { font-weight: 600; line-height: 1.15; }
+.board .bye { position: absolute; right: 6px; bottom: 6px; font-size: 0.8rem; opacity: 0.95; font-weight: 700; color: #222; }
+
+/* Board cell background colors by position */
+.pos-QB  { background: #ffcdd2 !important; }  /* strong red */
+.pos-RB  { background: #a5d6a7 !important; }  /* strong green */
+.pos-WR  { background: #fff59d !important; }  /* strong yellow */
+.pos-TE  { background: #b39ddb !important; }  /* strong purple */
+.pos-K   { background: #ffd180 !important; }  /* strong orange */
+.pos-DST { background: #bdbdbd !important; }  /* strong gray */
+
+/* Improve text readability in colored cells */
+.pos-QB .player-name, .pos-RB .player-name, .pos-WR .player-name,
+.pos-TE .player-name, .pos-K .player-name, .pos-DST .player-name { color: #111; }
+.pos-QB .bye, .pos-RB .bye, .pos-WR .bye, .pos-TE .bye, .pos-K .bye, .pos-DST .bye { color: #333; }
+
+/* Available list button colors by position */
+.pool li.qb  button.pick { background: #ffe4e6; color: #111; border-color: #f5b7be; }
+.pool li.rb  button.pick { background: #e7f6ea; color: #111; border-color: #bfe6c9; }
+.pool li.wr  button.pick { background: #fff7cc; color: #111; border-color: #f1e08a; }
+.pool li.te  button.pick { background: #efe7ff; color: #111; border-color: #d3c6ff; }
+.pool li.k   button.pick { background: #ffefd9; color: #111; border-color: #ffd39b; }
+.pool li.dst button.pick { background: #f5f5f5; color: #111; border-color: #ddd; }
