@@ -83,10 +83,13 @@ class DraftGame:
             self.pick_ptr += 1
 
     def user_pick_by_index(self, top_index):
-        # top-20 view comes from pool[:20]
+        # pick from the pool based on the provided index
         pick = self.pool.pop(top_index)
         self.board["You"].append(pick)
         self.pick_ptr += 1
+        # Only let CPU advance if it's not your turn next
+        if self._current_team() != "You":
+            self.advance_to_user_turn()
 
     def full_pool(self):
         # name + (pos, bye) for UI list, for all players in pool
