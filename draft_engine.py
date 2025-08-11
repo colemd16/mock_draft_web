@@ -32,6 +32,8 @@ class DraftGame:
         self.team_names = [f"Team{i+1}" for i in range(teams)]
         self.team_names[slot-1] = "You"
         self.board = {t: [] for t in self.team_names}
+        # Track how many players have been drafted per position
+        self.pos_counts = {}
         self.pool = list(self.players_all)  # fresh copy
         self.pick_ptr = 0                   # 0..(teams*rounds-1)
         # precompute snake order
@@ -74,18 +76,27 @@ class DraftGame:
             return i
         return 0
 
+    def _tag_pick(self, pick: dict) -> dict:
+        """Return a copy of the pick dict with a per-position rank tag (e.g., WR1, RB2)."""
+        pos = pick.get("position", "")
+        n = self.pos_counts.get(pos, 0) + 1
+        self.pos_counts[pos] = n
+        tagged = dict(pick)
+        tagged["pos_rank"] = f"{pos}{n}" if pos else ""
+        return tagged
+
     def advance_to_user_turn(self):
         while self.pick_ptr < self.teams*self.rounds and self._current_team() != "You":
             team = self._current_team()
             idx = self._cpu_index(team)
             pick = self.pool.pop(idx)
-            self.board[team].append(pick)
+            self.board[team].append(self._tag_pick(pick))
             self.pick_ptr += 1
 
     def user_pick_by_index(self, top_index):
         # pick from the pool based on the provided index
         pick = self.pool.pop(top_index)
-        self.board["You"].append(pick)
+        self.board["You"].append(self._tag_pick(pick))
         self.pick_ptr += 1
         # Only let CPU advance if it's not your turn next
         if self._current_team() != "You":
@@ -116,7 +127,8 @@ class DraftGame:
                         "name": p["name"],
                         "pos": p["position"],
                         "bye": p["bye"],
-                        "color": COLOR.get(p["position"], "white")
+                        "color": COLOR.get(p["position"], "white"),
+                        "pos_rank": p.get("pos_rank", "")
                     })
                 else:
                     row.append(None)

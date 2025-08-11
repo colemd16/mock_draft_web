@@ -1,6 +1,11 @@
 /* static/styles.css */
 body { font-family: system-ui, sans-serif; margin: 24px; }
 table.board { border-collapse: collapse; width: 100%; table-layout: fixed; }
+
+.board th {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
 .board th, .board td { border: 1px solid #ccc; padding: 8px; padding-bottom: 20px; text-align: center; white-space: normal; overflow-wrap: anywhere; position: relative; vertical-align: top; min-height: 120px; box-sizing: border-box; }
 .pool { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
 .pool .meta { color: #666; margin-left: 6px; }
@@ -24,8 +29,18 @@ button.pick:disabled { opacity: 0.5; cursor: not-allowed; }
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word;
+  margin-bottom: 12px; /* added to create space */
 }
-.board .bye { position: absolute; right: 6px; bottom: 6px; font-size: 0.7rem; opacity: 0.95; font-weight: 700; color: #222; }
+.board .bye { position: absolute; right: 6px; bottom: 6px; font-size: 0.6rem; opacity: 0.95; font-weight: 700; color: #222; }
+.board .pos-rank {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  font-size: 0.6rem;
+  opacity: 0.95;
+  font-weight: 700;
+  color: #222;
+}
 
 /* Board cell background colors by position */
 .pos-QB  { background: #ffcdd2 !important; }  /* strong red */

@@ -15,14 +15,15 @@ function getDetail(state){
   return state.board.map(row => row.map(cell => {
     if (!cell) return null;
     if (typeof cell === 'string') {
-      return { name: cell, pos: null, bye: null, color: null };
+      return { name: cell, pos: null, bye: null, color: null, pos_rank: '' };
     }
     // Assume object with fields coming from backend
     const name = cell.name || '';
     const pos = cell.pos || cell.position || '';
     const bye = cell.bye || cell.bye_week || '';
     const color = cell.color || null;
-    return { name, pos, bye, color };
+    const pos_rank = cell.pos_rank || cell.posRank || '';
+    return { name, pos, bye, color, pos_rank };
   }));
 }
 
@@ -71,6 +72,7 @@ function renderBoardFrom(detail, teams, round){
       const bg = posUpper && POS_BG[posUpper] ? ` style="background-color:${POS_BG[posUpper]}"` : '';
       html += `<td class="cell ${posClass}"${bg}>`+
               `<div class="player-name">${name}</div>`+
+              `<div class="pos-rank">${cell.pos_rank || ''}</div>`+
               `<div class="bye">${byeText}</div>`+
               `</td>`;
     });

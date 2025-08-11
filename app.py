@@ -26,7 +26,7 @@ def start():
     global LAST_SLOT
     LAST_SLOT = slot
     GAME.reset(slot=slot, teams=12, rounds=20)
-    GAME.advance_to_user_turn()   # auto-pick CPU until it’s your pick
+    GAME.advance_to_user_turn()
     state = GAME.state()
     state["ok"] = True
     return jsonify(state)
@@ -65,7 +65,6 @@ def pick():
 
     try:
         GAME.user_pick_by_index(player_index)
-        GAME.advance_to_user_turn()                # CPU picks to next user turn
     except Exception as e:
         # Surface a readable error to the client (e.g., out-of-range index)
         return error(str(e))
