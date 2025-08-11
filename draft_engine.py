@@ -4,7 +4,7 @@ import csv
 COLOR = {"QB":"red","RB":"green","WR":"yellow","TE":"purple","K":"orange","D/ST":"white"}
 
 class DraftGame:
-    def __init__(self, players_csv):
+    def __init__(self, players_csv="players2.csv"):
         self.players_csv = players_csv
         self.players_all = self._load_players()
         self.reset(slot=4, teams=12, rounds=20)

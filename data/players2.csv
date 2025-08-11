@@ -1,0 +1,26 @@
+overall,player_beta,player_name,bye_week,position_beta,position,team,Min,min_pos,adp_beta,adp,Max,max_pos
+1,Ja’Marr Chase (10),Ja’Marr Chase,10,WR1,WR,CIN,1 (1.1),1.1,1 (1.1),1.1,2 (1.2),1.2
+2,Bijan Robinson (5),Bijan Robinson,5,RB1,RB,ATL,1 (1.1),1.1,2 (1.2),1.2,4 (1.4),1.4
+3,Jahmyr Gibbs (8),Jahmyr Gibbs,8,RB2,RB,DET,1 (1.1),1.1,4 (1.4),1.4,7 (1.7),1.7
+4,CeeDee Lamb (10),CeeDee Lamb,10,WR2,WR,DAL,2 (1.2),1.2,4 (1.4),1.4,9 (1.9),1.9
+5,Justin Jefferson (6),Justin Jefferson,6,WR3,WR,MIN,3 (1.3),1.3,6 (1.6),1.6,9 (1.9),1.9
+6,Saquon Barkley (9),Saquon Barkley,9,RB3,RB,PHI,2 (1.2),1.2,6 (1.6),1.6,10 (1.10),1.10
+7,Brock Bowers (8),Brock Bowers,8,TE1,TE,LV,2 (1.2),1.2,6 (1.6),1.6,13 (2.1),2.1
+8,Christian McCaffrey (14),Christian McCaffrey,14,RB4,RB,SF,5 (1.5),1.5,9 (1.9),1.9,17 (2.5),2.5
+9,Malik Nabers (14),Malik Nabers,14,WR4,WR,NYG,4 (1.4),1.4,10 (1.10),1.10,16 (2.4),2.4
+10,De’Von Achane (12),De’Von Achane,12,RB5,RB,MIA,6 (1.6),1.6,11 (1.11),1.11,16 (2.4),2.4
+11,Ashton Jeanty (8),Ashton Jeanty,8,RB6,RB,LV,7 (1.7),1.7,12 (1.12),1.12,17 (2.5),2.5
+12,Amon-Ra St. Brown (8),Amon-Ra St. Brown,8,WR5,WR,DET,8 (1.8),1.8,13 (2.1),2.1,19 (2.7),2.7
+13,Trey McBride (8),Trey McBride,8,TE2,TE,ARI,7 (1.7),1.7,13 (2.1),2.1,19 (2.7),2.7
+14,Nico Collins (6),Nico Collins,6,WR6,WR,HOU,11 (1.11),1.11,14 (2.2),2.2,19 (2.7),2.7
+15,Puka Nacua (8),Puka Nacua,8,WR7,WR,LAR,6 (1.6),1.6,14 (2.2),2.2,20 (2.8),2.8
+16,Brian Thomas (8),Brian Thomas,8,WR8,WR,JAC,7 (1.7),1.7,15 (2.3),2.3,18 (2.6),2.6
+17,Derrick Henry (7),Derrick Henry,7,RB7,RB,BAL,9 (1.9),1.9,16 (2.4),2.4,20 (2.8),2.8
+18,Drake London (5),Drake London,5,WR9,WR,ATL,14 (2.2),2.2,18 (2.6),2.6,21 (2.9),2.9
+19,Chase Brown (10),Chase Brown,10,RB8,RB,CIN,14 (2.2),2.2,19 (2.7),2.7,25 (3.1),3.1
+20,A.J. Brown (9),A.J. Brown,9,WR10,WR,PHI,19 (2.7),2.7,21 (2.9),2.9,26 (3.2),3.2
+21,Bucky Irving (9),Bucky Irving,9,RB9,RB,TB,13 (2.1),2.1,22 (2.10),2.10,31 (3.7),3.7
+22,Ladd McConkey (12),Ladd McConkey,12,WR11,WR,LAC,13 (2.1),2.1,23 (2.11),2.11,29 (3.5),3.5
+23,Jonathan Taylor (11),Jonathan Taylor,11,RB10,RB,IND,16 (2.4),2.4,23 (2.11),2.11,28 (3.4),3.4
+24,Josh Jacobs (5),Josh Jacobs,5,RB11,RB,GB,8 (1.8),1.8,23 (2.11),2.11,30 (3.6),3.6
+25,George Kittle (14),George Kittle,14,TE3,TE,SF,17 (2.5),2.5,24 (2.12),2.12,31 (3.7),3.7

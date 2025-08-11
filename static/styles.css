@@ -15,7 +15,7 @@ button.pick:disabled { opacity: 0.5; cursor: not-allowed; }
 .k   { color:#ff8c00; }
 .dst { color:#fafafa; }
 /* Helpers for board cell content */
-.board .player-name { font-weight: 600; line-height: 1.15; }
+.board .player-name { font-weight: 600; line-height: 1.15; font-size: 0.85rem; }
 .board .bye { position: absolute; right: 6px; bottom: 6px; font-size: 0.8rem; opacity: 0.95; font-weight: 700; color: #222; }
 
 /* Board cell background colors by position */
