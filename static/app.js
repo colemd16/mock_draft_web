@@ -12,7 +12,18 @@ function getDetail(state){
   if (!state) return null;
   if (state.board_detail) return state.board_detail;
   if (!state.board) return null;
-  return state.board.map(row => row.map(name => name ? ({ name, pos:null, bye:null }) : null));
+  return state.board.map(row => row.map(cell => {
+    if (!cell) return null;
+    if (typeof cell === 'string') {
+      return { name: cell, pos: null, bye: null, color: null };
+    }
+    // Assume object with fields coming from backend
+    const name = cell.name || '';
+    const pos = cell.pos || cell.position || '';
+    const bye = cell.bye || cell.bye_week || '';
+    const color = cell.color || null;
+    return { name, pos, bye, color };
+  }));
 }
 
 function cloneDetail(detail){
@@ -42,8 +53,8 @@ function renderBoardFrom(detail, teams, round){
     'RB':  '#e7f6ea',
     'WR':  '#fff7cc',
     'TE':  '#efe7ff',
-    'K':   '#ffefd9',
-    'D/ST':'#f5f5f5'
+    'PK':   '#ffefd9',
+    'DF':'#f5f5f5'
   };
   let html = `<h2>Draft Board (Round ${round})</h2>`;
   html += `<table class="board"><thead><tr>`;
@@ -53,12 +64,11 @@ function renderBoardFrom(detail, teams, round){
     html += `<tr>`;
     row.forEach(cell => {
       if (!cell) { html += `<td class="cell"></td>`; return; }
-      const rawPos = cell.pos || '';
-      const posKey = rawPos.toUpperCase().replace('/', '');
-      const posClass = rawPos ? `pos-${posKey}` : '';
+      const posUpper = (cell.pos || '').toUpperCase().replace('/', '');
+      const posClass = posUpper ? `pos-${posUpper}` : '';
       const name = cell.name || '';
-      const byeText = cell.bye ? `Bye ${cell.bye}` : '';
-      const bg = rawPos && POS_BG[rawPos] ? ` style=\"background-color:${POS_BG[rawPos]}\"` : '';
+      const byeText = cell.bye ? `${cell.bye}` : '';
+      const bg = posUpper && POS_BG[posUpper] ? ` style="background-color:${POS_BG[posUpper]}"` : '';
       html += `<td class="cell ${posClass}"${bg}>`+
               `<div class="player-name">${name}</div>`+
               `<div class="bye">${byeText}</div>`+

@@ -104,16 +104,22 @@ class DraftGame:
         ]
 
     def board_rows(self):
-        # one board (teams as columns), names only (no pos/bye)
+        # one board (teams as columns), include name, pos, bye, and color
         rounds = max(len(v) for v in self.board.values()) if self.board else 0
         rows = []
         for r in range(rounds):
             row = []
             for t in self.team_names:
                 if r < len(self.board[t]):
-                    row.append(self.board[t][r]["name"])
+                    p = self.board[t][r]
+                    row.append({
+                        "name": p["name"],
+                        "pos": p["position"],
+                        "bye": p["bye"],
+                        "color": COLOR.get(p["position"], "white")
+                    })
                 else:
-                    row.append("")
+                    row.append(None)
             rows.append(row)
         return rows
 
