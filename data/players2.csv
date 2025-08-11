@@ -1,26 +1,326 @@
 overall,player_beta,player_name,bye_week,position_beta,position,team,Min,min_pos,adp_beta,adp,Max,max_pos
-1,Ja’Marr Chase (10),Ja’Marr Chase,10,WR1,WR,CIN,1 (1.1),1.1,1 (1.1),1.1,2 (1.2),1.2
-2,Bijan Robinson (5),Bijan Robinson,5,RB1,RB,ATL,1 (1.1),1.1,2 (1.2),1.2,4 (1.4),1.4
-3,Jahmyr Gibbs (8),Jahmyr Gibbs,8,RB2,RB,DET,1 (1.1),1.1,4 (1.4),1.4,7 (1.7),1.7
-4,CeeDee Lamb (10),CeeDee Lamb,10,WR2,WR,DAL,2 (1.2),1.2,4 (1.4),1.4,9 (1.9),1.9
-5,Justin Jefferson (6),Justin Jefferson,6,WR3,WR,MIN,3 (1.3),1.3,6 (1.6),1.6,9 (1.9),1.9
-6,Saquon Barkley (9),Saquon Barkley,9,RB3,RB,PHI,2 (1.2),1.2,6 (1.6),1.6,10 (1.10),1.10
-7,Brock Bowers (8),Brock Bowers,8,TE1,TE,LV,2 (1.2),1.2,6 (1.6),1.6,13 (2.1),2.1
-8,Christian McCaffrey (14),Christian McCaffrey,14,RB4,RB,SF,5 (1.5),1.5,9 (1.9),1.9,17 (2.5),2.5
-9,Malik Nabers (14),Malik Nabers,14,WR4,WR,NYG,4 (1.4),1.4,10 (1.10),1.10,16 (2.4),2.4
-10,De’Von Achane (12),De’Von Achane,12,RB5,RB,MIA,6 (1.6),1.6,11 (1.11),1.11,16 (2.4),2.4
-11,Ashton Jeanty (8),Ashton Jeanty,8,RB6,RB,LV,7 (1.7),1.7,12 (1.12),1.12,17 (2.5),2.5
-12,Amon-Ra St. Brown (8),Amon-Ra St. Brown,8,WR5,WR,DET,8 (1.8),1.8,13 (2.1),2.1,19 (2.7),2.7
-13,Trey McBride (8),Trey McBride,8,TE2,TE,ARI,7 (1.7),1.7,13 (2.1),2.1,19 (2.7),2.7
-14,Nico Collins (6),Nico Collins,6,WR6,WR,HOU,11 (1.11),1.11,14 (2.2),2.2,19 (2.7),2.7
-15,Puka Nacua (8),Puka Nacua,8,WR7,WR,LAR,6 (1.6),1.6,14 (2.2),2.2,20 (2.8),2.8
-16,Brian Thomas (8),Brian Thomas,8,WR8,WR,JAC,7 (1.7),1.7,15 (2.3),2.3,18 (2.6),2.6
-17,Derrick Henry (7),Derrick Henry,7,RB7,RB,BAL,9 (1.9),1.9,16 (2.4),2.4,20 (2.8),2.8
-18,Drake London (5),Drake London,5,WR9,WR,ATL,14 (2.2),2.2,18 (2.6),2.6,21 (2.9),2.9
-19,Chase Brown (10),Chase Brown,10,RB8,RB,CIN,14 (2.2),2.2,19 (2.7),2.7,25 (3.1),3.1
-20,A.J. Brown (9),A.J. Brown,9,WR10,WR,PHI,19 (2.7),2.7,21 (2.9),2.9,26 (3.2),3.2
-21,Bucky Irving (9),Bucky Irving,9,RB9,RB,TB,13 (2.1),2.1,22 (2.10),2.10,31 (3.7),3.7
-22,Ladd McConkey (12),Ladd McConkey,12,WR11,WR,LAC,13 (2.1),2.1,23 (2.11),2.11,29 (3.5),3.5
-23,Jonathan Taylor (11),Jonathan Taylor,11,RB10,RB,IND,16 (2.4),2.4,23 (2.11),2.11,28 (3.4),3.4
-24,Josh Jacobs (5),Josh Jacobs,5,RB11,RB,GB,8 (1.8),1.8,23 (2.11),2.11,30 (3.6),3.6
-25,George Kittle (14),George Kittle,14,TE3,TE,SF,17 (2.5),2.5,24 (2.12),2.12,31 (3.7),3.7
+1,Ja’Marr Chase,Ja’Marr Chase,10,WR1,WR,CIN,1 (1.1),1.1,1.1,1.1,2 (1.2),1.2
+2,Bijan Robinson,Bijan Robinson,5,RB1,RB,ATL,1 (1.1),1.1,1.2,1.2,4 (1.4),1.4
+3,Jahmyr Gibbs,Jahmyr Gibbs,8,RB2,RB,DET,1 (1.1),1.1,1.4,1.4,7 (1.7),1.7
+4,CeeDee Lamb,CeeDee Lamb,10,WR2,WR,DAL,2 (1.2),1.2,1.4,1.4,9 (1.9),1.9
+5,Justin Jefferson,Justin Jefferson,6,WR3,WR,MIN,3 (1.3),1.3,1.6,1.6,9 (1.9),1.9
+6,Saquon Barkley,Saquon Barkley,9,RB3,RB,PHI,2 (1.2),1.2,1.6,1.6,10 (1.10),1.10
+7,Brock Bowers,Brock Bowers,8,TE1,TE,LV,2 (1.2),1.2,1.6,1.6,13 (2.1),2.1
+8,Christian McCaffrey,Christian McCaffrey,14,RB4,RB,SF,5 (1.5),1.5,1.9,1.9,17 (2.5),2.5
+9,Malik Nabers,Malik Nabers,14,WR4,WR,NYG,4 (1.4),1.4,1.10,1.10,16 (2.4),2.4
+10,De’Von Achane,De’Von Achane,12,RB5,RB,MIA,6 (1.6),1.6,1.11,1.11,16 (2.4),2.4
+11,Ashton Jeanty,Ashton Jeanty,8,RB6,RB,LV,7 (1.7),1.7,1.12,1.12,17 (2.5),2.5
+12,Amon-Ra St. Brown,Amon-Ra St. Brown,8,WR5,WR,DET,8 (1.8),1.8,2.1,2.1,19 (2.7),2.7
+13,Trey McBride,Trey McBride,8,TE2,TE,ARI,7 (1.7),1.7,2.1,2.1,19 (2.7),2.7
+14,Nico Collins,Nico Collins,6,WR6,WR,HOU,11 (1.11),1.11,2.2,2.2,19 (2.7),2.7
+15,Puka Nacua,Puka Nacua,8,WR7,WR,LAR,6 (1.6),1.6,2.2,2.2,20 (2.8),2.8
+16,Brian Thomas,Brian Thomas,8,WR8,WR,JAC,7 (1.7),1.7,2.3,2.3,18 (2.6),2.6
+17,Derrick Henry,Derrick Henry,7,RB7,RB,BAL,9 (1.9),1.9,2.4,2.4,20 (2.8),2.8
+18,Drake London,Drake London,5,WR9,WR,ATL,14 (2.2),2.2,2.6,2.6,21 (2.9),2.9
+19,Chase Brown,Chase Brown,10,RB8,RB,CIN,14 (2.2),2.2,2.7,2.7,25 (3.1),3.1
+20,A.J. Brown,A.J. Brown,9,WR10,WR,PHI,19 (2.7),2.7,2.9,2.9,26 (3.2),3.2
+21,Bucky Irving,Bucky Irving,9,RB9,RB,TB,13 (2.1),2.1,2.10,2.10,31 (3.7),3.7
+22,Ladd McConkey,Ladd McConkey,12,WR11,WR,LAC,13 (2.1),2.1,2.11,2.11,29 (3.5),3.5
+23,Jonathan Taylor,Jonathan Taylor,11,RB10,RB,IND,16 (2.4),2.4,2.11,2.11,28 (3.4),3.4
+24,Josh Jacobs,Josh Jacobs,5,RB11,RB,GB,8 (1.8),1.8,2.11,2.11,30 (3.6),3.6
+25,George Kittle,George Kittle,14,TE3,TE,SF,17 (2.5),2.5,2.12,2.12,31 (3.7),3.7
+26,Kyren Williams,Kyren Williams,8,RB12,RB,LAR,17 (2.5),2.5,3.3,3.3,33 (3.9),3.9
+27,Tyreek Hill,Tyreek Hill,12,WR12,WR,MIA,20 (2.8),2.8,3.4,3.4,36 (3.12),3.12
+28,Omarion Hampton,Omarion Hampton,12,RB13,RB,LAC,22 (2.10),2.10,3.5,3.5,35 (3.11),3.11
+29,Garrett Wilson,Garrett Wilson,9,WR13,WR,NYJ,22 (2.10),2.10,3.6,3.6,36 (3.12),3.12
+30,Tee Higgins,Tee Higgins,10,WR14,WR,CIN,23 (2.11),2.11,3.6,3.6,35 (3.11),3.11
+31,Jaxon Smith-Njigba,Jaxon Smith-Njigba,8,WR15,WR,SEA,24 (2.12),2.12,3.7,3.7,40 (4.4),4.4
+32,Lamar Jackson,Lamar Jackson,7,QB1,QB,BAL,23 (2.11),2.11,3.8,3.8,42 (4.6),4.6
+33,Kenneth Walker,Kenneth Walker,8,RB14,RB,SEA,29 (3.5),3.5,3.9,3.9,44 (4.8),4.8
+34,Josh Allen,Josh Allen,7,QB2,QB,BUF,25 (3.1),3.1,3.10,3.10,43 (4.7),4.7
+35,Breece Hall,Breece Hall,9,RB15,RB,NYJ,28 (3.4),3.4,3.11,3.11,43 (4.7),4.7
+36,Davante Adams,Davante Adams,8,WR16,WR,LAR,24 (2.12),2.12,3.12,3.12,44 (4.8),4.8
+37,Marvin Harrison,Marvin Harrison,8,WR17,WR,ARI,27 (3.3),3.3,4.2,4.2,47 (4.11),4.11
+38,Alvin Kamara,Alvin Kamara,11,RB16,RB,NO,30 (3.6),3.6,4.3,4.3,51 (5.3),5.3
+39,James Cook,James Cook,7,RB17,RB,BUF,31 (3.7),3.7,4.3,4.3,46 (4.10),4.10
+40,Mike Evans,Mike Evans,9,WR18,WR,TB,27 (3.3),3.3,4.5,4.5,54 (5.6),5.6
+41,Jayden Daniels,Jayden Daniels,12,QB3,QB,WAS,30 (3.6),3.6,4.5,4.5,55 (5.7),5.7
+42,Xavier Worthy,Xavier Worthy,10,WR19,WR,KC,33 (3.9),3.9,4.6,4.6,52 (5.4),5.4
+43,TreVeyon Henderson,TreVeyon Henderson,14,RB18,RB,NE,25 (3.1),3.1,4.8,4.8,56 (5.8),5.8
+44,Tetairoa McMillan,Tetairoa McMillan,14,WR20,WR,CAR,30 (3.6),3.6,4.8,4.8,57 (5.9),5.9
+45,DK Metcalf,DK Metcalf,5,WR21,WR,PIT,34 (3.10),3.10,4.10,4.10,56 (5.8),5.8
+46,Jalen Hurts,Jalen Hurts,9,QB4,QB,PHI,39 (4.3),4.3,4.11,4.11,56 (5.8),5.8
+47,Terry McLaurin,Terry McLaurin,12,WR22,WR,WAS,38 (4.2),4.2,4.12,4.12,59 (5.11),5.11
+48,DJ Moore,DJ Moore,5,WR23,WR,CHI,38 (4.2),4.2,4.12,4.12,57 (5.9),5.9
+49,Chuba Hubbard,Chuba Hubbard,14,RB19,RB,CAR,38 (4.2),4.2,5.2,5.2,60 (5.12),5.12
+50,Courtland Sutton,Courtland Sutton,12,WR24,WR,DEN,41 (4.5),4.5,5.3,5.3,57 (5.9),5.9
+51,Sam LaPorta,Sam LaPorta,8,TE4,TE,DET,35 (3.11),3.11,5.4,5.4,65 (6.5),6.5
+52,Joe Burrow,Joe Burrow,10,QB5,QB,CIN,37 (4.1),4.1,5.4,5.4,73 (7.1),7.1
+53,George Pickens,George Pickens,10,WR25,WR,DAL,42 (4.6),4.6,5.4,5.4,68 (6.8),6.8
+54,RJ Harvey,RJ Harvey,12,RB20,RB,DEN,37 (4.1),4.1,5.5,5.5,68 (6.8),6.8
+55,Rashee Rice,Rashee Rice,10,WR26,WR,KC,43 (4.7),4.7,5.7,5.7,66 (6.6),6.6
+56,James Conner,James Conner,8,RB21,RB,ARI,42 (4.6),4.6,5.7,5.7,70 (6.10),6.10
+57,Jameson Williams,Jameson Williams,8,WR27,WR,DET,47 (4.11),4.11,5.7,5.7,65 (6.5),6.5
+58,Calvin Ridley,Calvin Ridley,10,WR28,WR,TEN,46 (4.10),4.10,5.9,5.9,68 (6.8),6.8
+59,DeVonta Smith,DeVonta Smith,9,WR29,WR,PHI,49 (5.1),5.1,5.10,5.10,67 (6.7),6.7
+60,D’Andre Swift,D’Andre Swift,5,RB22,RB,CHI,37 (4.1),4.1,5.10,5.10,68 (6.8),6.8
+61,Travis Kelce,Travis Kelce,10,TE5,TE,KC,36 (3.12),3.12,5.12,5.12,76 (7.4),7.4
+62,T.J. Hockenson,T.J. Hockenson,6,TE6,TE,MIN,57 (5.9),5.9,6.3,6.3,71 (6.11),6.11
+63,Travis Hunter,Travis Hunter,8,WR30,WR,JAC,55 (5.7),5.7,6.4,6.4,81 (7.9),7.9
+64,Zay Flowers,Zay Flowers,7,WR31,WR,BAL,55 (5.7),5.7,6.5,6.5,81 (7.9),7.9
+65,Jaylen Waddle,Jaylen Waddle,12,WR32,WR,MIA,44 (4.8),4.8,6.5,6.5,75 (7.3),7.3
+66,Isiah Pacheco,Isiah Pacheco,10,RB23,RB,KC,54 (5.6),5.6,6.8,6.8,82 (7.10),7.10
+67,Kaleb Johnson,Kaleb Johnson,5,RB24,RB,PIT,55 (5.7),5.7,6.8,6.8,84 (7.12),7.12
+68,Jerry Jeudy,Jerry Jeudy,9,WR33,WR,CLE,60 (5.12),5.12,6.10,6.10,89 (8.5),8.5
+69,David Montgomery,David Montgomery,8,RB25,RB,DET,53 (5.5),5.5,6.11,6.11,83 (7.11),7.11
+70,Aaron Jones,Aaron Jones,6,RB26,RB,MIN,59 (5.11),5.11,6.11,6.11,91 (8.7),8.7
+71,Tony Pollard,Tony Pollard,10,RB27,RB,TEN,61 (6.1),6.1,6.12,6.12,90 (8.6),8.6
+72,Rome Odunze,Rome Odunze,5,WR34,WR,CHI,53 (5.5),5.5,7.2,7.2,85 (8.1),8.1
+73,Evan Engram,Evan Engram,12,TE7,TE,DEN,66 (6.6),6.6,7.2,7.2,83 (7.11),7.11
+74,Mark Andrews,Mark Andrews,7,TE8,TE,BAL,60 (5.12),5.12,7.2,7.2,88 (8.4),8.4
+75,Chris Olave,Chris Olave,11,WR35,WR,NO,62 (6.2),6.2,7.3,7.3,89 (8.5),8.5
+76,Stefon Diggs,Stefon Diggs,14,WR36,WR,NE,54 (5.6),5.6,7.3,7.3,87 (8.3),8.3
+77,Jakobi Meyers,Jakobi Meyers,8,WR37,WR,LV,65 (6.5),6.5,7.4,7.4,93 (8.9),8.9
+78,Ricky Pearsall,Ricky Pearsall,14,WR38,WR,SF,64 (6.4),6.4,7.5,7.5,93 (8.9),8.9
+79,Tyler Warren,Tyler Warren,11,TE9,TE,IND,62 (6.2),6.2,7.6,7.6,95 (8.11),8.11
+80,David Njoku,David Njoku,9,TE10,TE,CLE,66 (6.6),6.6,7.6,7.6,93 (8.9),8.9
+81,Emeka Egbuka,Emeka Egbuka,9,WR39,WR,TB,62 (6.2),6.2,7.7,7.7,90 (8.6),8.6
+82,Joe Mixon,Joe Mixon,6,RB28,RB,HOU,63 (6.3),6.3,7.11,7.11,99 (9.3),9.3
+83,Deebo Samuel,Deebo Samuel,12,WR40,WR,WAS,69 (6.9),6.9,7.11,7.11,92 (8.8),8.8
+84,Jordan Mason,Jordan Mason,6,RB29,RB,MIN,62 (6.2),6.2,8.1,8.1,96 (8.12),8.12
+85,Tyrone Tracy,Tyrone Tracy,14,RB30,RB,NYG,73 (7.1),7.1,8.1,8.1,102 (9.6),9.6
+86,Patrick Mahomes,Patrick Mahomes,10,QB6,QB,KC,62 (6.2),6.2,8.2,8.2,103 (9.7),9.7
+87,Brian Robinson,Brian Robinson,12,RB31,RB,WAS,67 (6.7),6.7,8.2,8.2,101 (9.5),9.5
+88,Jaylen Warren,Jaylen Warren,5,RB32,RB,PIT,77 (7.5),7.5,8.3,8.3,101 (9.5),9.5
+89,Jauan Jennings,Jauan Jennings,14,WR41,WR,SF,77 (7.5),7.5,8.4,8.4,100 (9.4),9.4
+90,Matthew Golden,Matthew Golden,5,WR42,WR,GB,79 (7.7),7.7,8.7,8.7,106 (9.10),9.10
+91,Jordan Addison,Jordan Addison,6,WR43,WR,MIN,74 (7.2),7.2,8.7,8.7,101 (9.5),9.5
+92,Travis Etienne,Travis Etienne,8,RB33,RB,JAC,79 (7.7),7.7,8.10,8.10,106 (9.10),9.10
+93,J.K. Dobbins,J.K. Dobbins,12,RB34,RB,DEN,83 (7.11),7.11,8.11,8.11,107 (9.11),9.11
+94,Chris Godwin,Chris Godwin,9,WR44,WR,TB,82 (7.10),7.10,8.11,8.11,119 (10.11),10.11
+95,Khalil Shakir,Khalil Shakir,7,WR45,WR,BUF,82 (7.10),7.10,8.12,8.12,112 (10.4),10.4
+96,Jake Ferguson,Jake Ferguson,10,TE11,TE,DAL,81 (7.9),7.9,9.1,9.1,111 (10.3),10.3
+97,Colston Loveland,Colston Loveland,5,TE12,TE,CHI,83 (7.11),7.11,9.2,9.2,118 (10.10),10.10
+98,Tucker Kraft,Tucker Kraft,5,TE13,TE,GB,83 (7.11),7.11,9.2,9.2,117 (10.9),10.9
+99,Jayden Reed,Jayden Reed,5,WR46,WR,GB,52 (5.4),5.4,9.4,9.4,119 (10.11),10.11
+100,Zach Charbonnet,Zach Charbonnet,8,RB35,RB,SEA,86 (8.2),8.2,9.6,9.6,120 (10.12),10.12
+101,Cooper Kupp,Cooper Kupp,8,WR47,WR,SEA,86 (8.2),8.2,9.8,9.8,120 (10.12),10.12
+102,Cam Skattebo,Cam Skattebo,14,RB36,RB,NYG,84 (7.12),7.12,9.9,9.9,129 (11.9),11.9
+103,Javonte Williams,Javonte Williams,10,RB37,RB,DAL,91 (8.7),8.7,9.9,9.9,126 (11.6),11.6
+104,Josh Downs,Josh Downs,11,WR48,WR,IND,85 (8.1),8.1,9.10,9.10,128 (11.8),11.8
+105,Dalton Kincaid,Dalton Kincaid,7,TE14,TE,BUF,87 (8.3),8.3,9.11,9.11,128 (11.8),11.8
+106,Jaydon Blue,Jaydon Blue,10,RB38,RB,DAL,85 (8.1),8.1,9.11,9.11,125 (11.5),11.5
+107,Bo Nix,Bo Nix,12,QB7,QB,DEN,72 (6.12),6.12,9.12,9.12,137 (12.5),12.5
+108,Baker Mayfield,Baker Mayfield,9,QB8,QB,TB,91 (8.7),8.7,10.4,10.4,133 (12.1),12.1
+109,Keon Coleman,Keon Coleman,7,WR49,WR,BUF,90 (8.6),8.6,10.5,10.5,135 (12.3),12.3
+110,Kyle Pitts,Kyle Pitts,5,TE15,TE,ATL,98 (9.2),9.2,10.5,10.5,135 (12.3),12.3
+111,Michael Pittman,Michael Pittman,11,WR50,WR,IND,100 (9.4),9.4,10.5,10.5,131 (11.11),11.11
+112,Tank Bigsby,Tank Bigsby,8,RB39,RB,JAC,97 (9.1),9.1,10.5,10.5,135 (12.3),12.3
+113,Tyjae Spears,Tyjae Spears,10,RB40,RB,TEN,85 (8.1),8.1,10.5,10.5,172 (15.4),15.4
+114,Dallas Goedert,Dallas Goedert,9,TE16,TE,PHI,100 (9.4),9.4,10.7,10.7,136 (12.4),12.4
+115,Jayden Higgins,Jayden Higgins,6,WR51,WR,HOU,101 (9.5),9.5,10.8,10.8,142 (12.10),12.10
+116,Rhamondre Stevenson,Rhamondre Stevenson,14,RB41,RB,NE,78 (7.6),7.6,10.8,10.8,142 (12.10),12.10
+117,Dak Prescott,Dak Prescott,10,QB9,QB,DAL,93 (8.9),8.9,10.9,10.9,141 (12.9),12.9
+118,Kyler Murray,Kyler Murray,8,QB10,QB,ARI,87 (8.3),8.3,10.12,10.12,152 (13.8),13.8
+119,Trey Benson,Trey Benson,8,RB42,RB,ARI,101 (9.5),9.5,10.12,10.12,145 (13.1),13.1
+120,Dylan Sampson,Dylan Sampson,9,RB43,RB,CLE,109 (10.1),10.1,11.1,11.1,140 (12.8),12.8
+121,Ray Davis,Ray Davis,7,RB44,RB,BUF,98 (9.2),9.2,11.3,11.3,146 (13.2),13.2
+122,Darnell Mooney,Darnell Mooney,5,WR52,WR,ATL,105 (9.9),9.9,11.4,11.4,143 (12.11),12.11
+123,Isaac Guerendo,Isaac Guerendo,14,RB45,RB,SF,107 (9.11),9.11,11.4,11.4,143 (12.11),12.11
+124,Braelon Allen,Braelon Allen,9,RB46,RB,NYJ,97 (9.1),9.1,11.5,11.5,147 (13.3),13.3
+125,Justin Fields,Justin Fields,9,QB11,QB,NYJ,49 (5.1),5.1,11.7,11.7,167 (14.11),14.11
+126,Luther Burden,Luther Burden,5,WR53,WR,CHI,110 (10.2),10.2,11.8,11.8,147 (13.3),13.3
+127,Brandon Aiyuk,Brandon Aiyuk,14,WR54,WR,SF,96 (8.12),8.12,11.9,11.9,154 (13.10),13.10
+128,Jerome Ford,Jerome Ford,9,RB47,RB,CLE,97 (9.1),9.1,11.9,11.9,150 (13.6),13.6
+129,Quinshon Judkins,Quinshon Judkins,9,RB48,RB,CLE,101 (9.5),9.5,11.10,11.10,174 (15.6),15.6
+130,Rachaad White,Rachaad White,9,RB49,RB,TB,110 (10.2),10.2,11.11,11.11,175 (15.7),15.7
+131,Christian Kirk,Christian Kirk,6,WR55,WR,HOU,110 (10.2),10.2,11.12,11.12,148 (13.4),13.4
+132,Bhayshul Tuten,Bhayshul Tuten,8,RB50,RB,JAC,105 (9.9),9.9,11.12,11.12,165 (14.9),14.9
+133,Rashid Shaheed,Rashid Shaheed,11,WR56,WR,NO,105 (9.9),9.9,12.1,12.1,151 (13.7),13.7
+134,Brenton Strange,Brenton Strange,8,TE17,TE,JAC,109 (10.1),10.1,12.2,12.2,162 (14.6),14.6
+135,Zach Ertz,Zach Ertz,12,TE18,TE,WAS,109 (10.1),10.1,12.2,12.2,160 (14.4),14.4
+136,Najee Harris,Najee Harris,12,RB51,RB,LAC,109 (10.1),10.1,12.5,12.5,168 (14.12),14.12
+137,Brock Purdy,Brock Purdy,14,QB12,QB,SF,115 (10.7),10.7,12.6,12.6,164 (14.8),14.8
+138,Austin Ekeler,Austin Ekeler,12,RB52,RB,WAS,109 (10.1),10.1,12.9,12.9,170 (15.2),15.2
+139,Drake Maye,Drake Maye,14,QB13,QB,NE,118 (10.10),10.10,12.9,12.9,167 (14.11),14.11
+140,Hunter Henry,Hunter Henry,14,TE19,TE,NE,125 (11.5),11.5,12.9,12.9,164 (14.8),14.8
+141,Jaylen Wright,Jaylen Wright,12,RB53,RB,MIA,111 (10.3),10.3,12.9,12.9,164 (14.8),14.8
+142,Keenan Allen,Keenan Allen,12,WR57,WR,LAC,103 (9.7),9.7,12.9,12.9,181 (16.1),16.1
+143,Caleb Williams,Caleb Williams,5,QB14,QB,CHI,116 (10.8),10.8,12.10,12.10,166 (14.10),14.10
+144,Tyler Allgeier,Tyler Allgeier,5,RB54,RB,ATL,124 (11.4),11.4,12.11,12.11,169 (15.1),15.1
+145,Marvin Mims,Marvin Mims,12,WR58,WR,DEN,115 (10.7),10.7,12.12,12.12,176 (15.8),15.8
+146,Nick Chubb,Nick Chubb,6,RB55,RB,HOU,129 (11.9),11.9,13.2,13.2,169 (15.1),15.1
+147,Isaiah Likely,Isaiah Likely,7,TE20,TE,BAL,81 (7.9),7.9,13.4,13.4,187 (16.7),16.7
+148,Jacory Croskey-Merritt,Jacory Croskey-Merritt,12,RB56,RB,WAS,126 (11.6),11.6,13.5,13.5,176 (15.8),15.8
+149,Tre’ Harris,Tre’ Harris,12,WR59,WR,LAC,116 (10.8),10.8,13.6,13.6,184 (16.4),16.4
+150,Cedric Tillman,Cedric Tillman,9,WR60,WR,CLE,121 (11.1),11.1,13.6,13.6,176 (15.8),15.8
+151,Jonnu Smith,Jonnu Smith,5,TE21,TE,PIT,121 (11.1),11.1,13.7,13.7,178 (15.10),15.10
+152,Hollywood Brown,Hollywood Brown,10,WR61,WR,KC,132 (11.12),11.12,13.10,13.10,190 (16.10),16.10
+153,Roschon Johnson,Roschon Johnson,5,RB57,RB,CHI,109 (10.1),10.1,13.10,13.10,178 (15.10),15.10
+154,DEN Team Defense,DEN Team Defense,12,DF1,DF,DEN,121 (11.1),11.1,13.11,13.11,173 (15.5),15.5
+155,Brandon Aubrey,Brandon Aubrey,10,PK1,PK,DAL,113 (10.5),10.5,13.12,13.12,200 (17.8),17.8
+156,DeMario Douglas,DeMario Douglas,14,WR62,WR,NE,136 (12.4),12.4,14.1,14.1,182 (16.2),16.2
+157,Jared Goff,Jared Goff,8,QB15,QB,DET,125 (11.5),11.5,14.1,14.1,199 (17.7),17.7
+158,Rashod Bateman,Rashod Bateman,7,WR63,WR,BAL,137 (12.5),12.5,14.2,14.2,179 (15.11),15.11
+159,Kyle Williams,Kyle Williams,14,WR64,WR,NE,128 (11.8),11.8,14.3,14.3,199 (17.7),17.7
+160,Justin Herbert,Justin Herbert,12,QB16,QB,LAC,125 (11.5),11.5,14.4,14.4,197 (17.5),17.5
+161,Joshua Palmer,Joshua Palmer,7,WR65,WR,BUF,134 (12.2),12.2,14.6,14.6,214 (18.10),18.10
+162,Will Shipley,Will Shipley,9,RB58,RB,PHI,140 (12.8),12.8,14.7,14.7,186 (16.6),16.6
+163,Woody Marks,Woody Marks,6,RB59,RB,HOU,145 (13.1),13.1,14.10,14.10,191 (16.11),16.11
+164,Mason Taylor,Mason Taylor,9,TE22,TE,NYJ,109 (10.1),10.1,14.10,14.10,209 (18.5),18.5
+165,Brashard Smith,Brashard Smith,10,RB60,RB,KC,137 (12.5),12.5,14.11,14.11,215 (18.11),18.11
+166,J.J. McCarthy,J.J. McCarthy,6,QB17,QB,MIN,140 (12.8),12.8,14.12,14.12,236 (20.8),20.8
+167,Tahj Brooks,Tahj Brooks,10,RB61,RB,CIN,150 (13.6),13.6,14.12,14.12,186 (16.6),16.6
+168,Chig Okonkwo,Chig Okonkwo,10,TE23,TE,TEN,136 (12.4),12.4,15.1,15.1,209 (18.5),18.5
+169,Rico Dowdle,Rico Dowdle,14,RB62,RB,CAR,147 (13.3),13.3,15.1,15.1,210 (18.6),18.6
+170,Elijah Arroyo,Elijah Arroyo,8,TE24,TE,SEA,132 (11.12),11.12,15.1,15.1,231 (20.3),20.3
+171,Jordan Love,Jordan Love,5,QB18,QB,GB,132 (11.12),11.12,15.1,15.1,202 (17.10),17.10
+172,Wan’Dale Robinson,Wan’Dale Robinson,14,WR66,WR,NYG,144 (12.12),12.12,15.3,15.3,209 (18.5),18.5
+173,Keaton Mitchell,Keaton Mitchell,7,RB63,RB,BAL,155 (13.11),13.11,15.4,15.4,190 (16.10),16.10
+174,C.J. Stroud,C.J. Stroud,6,QB19,QB,HOU,134 (12.2),12.2,15.6,15.6,203 (17.11),17.11
+175,Trevor Lawrence,Trevor Lawrence,8,QB20,QB,JAC,151 (13.7),13.7,15.9,15.9,204 (17.12),17.12
+176,Jarquez Hunter,Jarquez Hunter,8,RB64,RB,LAR,153 (13.9),13.9,15.12,15.12,220 (19.4),19.4
+177,Mike Gesicki,Mike Gesicki,10,TE25,TE,CIN,145 (13.1),13.1,15.12,15.12,217 (19.1),19.1
+178,Adam Thielen,Adam Thielen,14,WR67,WR,CAR,127 (11.7),11.7,16.2,16.2,216 (18.12),18.12
+179,Jalen McMillan,Jalen McMillan,9,WR68,WR,TB,140 (12.8),12.8,16.3,16.3,204 (17.12),17.12
+180,Romeo Doubs,Romeo Doubs,5,WR69,WR,GB,156 (13.12),13.12,16.3,16.3,214 (18.10),18.10
+181,Xavier Legette,Xavier Legette,14,WR70,WR,CAR,156 (13.12),13.12,16.3,16.3,208 (18.4),18.4
+182,BAL Team Defense,BAL Team Defense,7,DF2,DF,BAL,161 (14.5),14.5,16.4,16.4,212 (18.8),18.8
+183,Cade Otton,Cade Otton,9,TE26,TE,TB,145 (13.1),13.1,16.4,16.4,235 (20.7),20.7
+184,Blake Corum,Blake Corum,8,RB65,RB,LAR,144 (12.12),12.12,16.5,16.5,209 (18.5),18.5
+185,PHI Team Defense,PHI Team Defense,9,DF3,DF,PHI,104 (9.8),9.8,16.5,16.5,220 (19.4),19.4
+186,Miles Sanders,Miles Sanders,10,RB66,RB,DAL,156 (13.12),13.12,16.5,16.5,228 (19.12),19.12
+187,MarShawn Lloyd,MarShawn Lloyd,5,RB67,RB,GB,162 (14.6),14.6,16.7,16.7,213 (18.9),18.9
+188,PIT Team Defense,PIT Team Defense,5,DF4,DF,PIT,112 (10.4),10.4,16.7,16.7,209 (18.5),18.5
+189,Pat Bryant,Pat Bryant,12,WR71,WR,DEN,170 (15.2),15.2,16.8,16.8,221 (19.5),19.5
+190,DJ Giddens,DJ Giddens,11,RB68,RB,IND,163 (14.7),14.7,16.8,16.8,212 (18.8),18.8
+191,Kyle Monangai,Kyle Monangai,5,RB69,RB,CHI,166 (14.10),14.10,16.9,16.9,218 (19.2),19.2
+192,Darren Waller,Darren Waller,12,TE27,TE,MIA,144 (12.12),12.12,16.10,16.10,224 (19.8),19.8
+193,Quentin Johnston,Quentin Johnston,12,WR72,WR,LAC,156 (13.12),13.12,16.10,16.10,230 (20.2),20.2
+194,Dont’e Thornton,Dont’e Thornton,8,WR73,WR,LV,144 (12.12),12.12,16.12,16.12,223 (19.7),19.7
+195,Sean Tucker,Sean Tucker,9,RB70,RB,TB,145 (13.1),13.1,16.12,16.12,240 (20.12),20.12
+196,Jalen Royals,Jalen Royals,10,WR74,WR,KC,168 (14.12),14.12,17.3,17.3,224 (19.8),19.8
+197,Ja’Tavion Sanders,Ja’Tavion Sanders,14,TE28,TE,CAR,168 (14.12),14.12,17.3,17.3,237 (20.9),20.9
+198,Justice Hill,Justice Hill,7,RB71,RB,BAL,168 (14.12),14.12,17.5,17.5,221 (19.5),19.5
+199,Michael Penix,Michael Penix,5,QB21,QB,ATL,158 (14.2),14.2,17.5,17.5,240 (20.12),20.12
+200,HOU Team Defense,HOU Team Defense,6,DF5,DF,HOU,168 (14.12),14.12,17.6,17.6,225 (19.9),19.9
+201,Cameron Dicker,Cameron Dicker,12,PK2,PK,LAC,158 (14.2),14.2,17.6,17.6,219 (19.3),19.3
+202,MIN Team Defense,MIN Team Defense,6,DF6,DF,MIN,173 (15.5),15.5,17.6,17.6,221 (19.5),19.5
+203,Bryce Young,Bryce Young,14,QB22,QB,CAR,173 (15.5),15.5,17.7,17.7,233 (20.5),20.5
+204,Roman Wilson,Roman Wilson,5,WR75,WR,PIT,152 (13.8),13.8,17.8,17.8,234 (20.6),20.6
+205,Kareem Hunt,Kareem Hunt,10,RB72,RB,KC,168 (14.12),14.12,17.10,17.10,234 (20.6),20.6
+206,Pat Freiermuth,Pat Freiermuth,5,TE29,TE,PIT,173 (15.5),15.5,17.11,17.11,235 (20.7),20.7
+207,Andrei Iosivas,Andrei Iosivas,10,WR76,WR,CIN,181 (16.1),16.1,18.1,18.1,237 (20.9),20.9
+208,Tua Tagovailoa,Tua Tagovailoa,12,QB23,QB,MIA,166 (14.10),14.10,18.1,18.1,235 (20.7),20.7
+209,Jaleel McLaughlin,Jaleel McLaughlin,12,RB73,RB,DEN,205 (18.1),18.1,18.1,18.1,205 (18.1),18.1
+210,Dontayvion Wicks,Dontayvion Wicks,5,WR77,WR,GB,205 (18.1),18.1,18.1,18.1,205 (18.1),18.1
+211,Cameron Ward,Cameron Ward,10,QB24,QB,TEN,129 (11.9),11.9,18.4,18.4,237 (20.9),20.9
+212,Tory Horton,Tory Horton,8,WR78,WR,SEA,182 (16.2),16.2,18.4,18.4,239 (20.11),20.11
+213,Matthew Stafford,Matthew Stafford,8,QB25,QB,LAR,180 (15.12),15.12,18.4,18.4,234 (20.6),20.6
+214,Jake Bates,Jake Bates,8,PK3,PK,DET,189 (16.9),16.9,18.6,18.6,228 (19.12),19.12
+215,Theo Johnson,Theo Johnson,14,TE30,TE,NYG,183 (16.3),16.3,18.6,18.6,232 (20.4),20.4
+216,Anthony Richardson,Anthony Richardson,11,QB26,QB,IND,177 (15.9),15.9,18.6,18.6,236 (20.8),20.8
+217,A.J. Dillon,A.J. Dillon,9,RB74,RB,PHI,209 (18.5),18.5,18.6,18.6,210 (18.6),18.6
+218,BUF Team Defense,BUF Team Defense,7,DF7,DF,BUF,188 (16.8),16.8,18.7,18.7,232 (20.4),20.4
+219,Juwan Johnson,Juwan Johnson,11,TE31,TE,NO,172 (15.4),15.4,18.7,18.7,238 (20.10),20.10
+220,Jack Bech,Jack Bech,8,WR79,WR,LV,180 (15.12),15.12,18.8,18.8,240 (20.12),20.12
+221,Chase McLaughlin,Chase McLaughlin,9,PK4,PK,TB,183 (16.3),16.3,18.8,18.8,230 (20.2),20.2
+222,Elic Ayomanor,Elic Ayomanor,10,WR80,WR,TEN,153 (13.9),13.9,18.8,18.8,240 (20.12),20.12
+223,Ty Johnson,Ty Johnson,7,RB75,RB,BUF,193 (17.1),17.1,18.8,18.8,233 (20.5),20.5
+224,Kendre Miller,Kendre Miller,11,RB76,RB,NO,194 (17.2),17.2,18.9,18.9,239 (20.11),20.11
+225,Terrance Ferguson,Terrance Ferguson,8,TE32,TE,LAR,181 (16.1),16.1,18.9,18.9,233 (20.5),20.5
+226,Devin Neal,Devin Neal,11,RB77,RB,NO,196 (17.4),17.4,18.9,18.9,240 (20.12),20.12
+227,Jaylin Noel,Jaylin Noel,6,WR81,WR,HOU,184 (16.4),16.4,18.10,18.10,235 (20.7),20.7
+228,Elijah Mitchell,Elijah Mitchell,10,RB78,RB,KC,175 (15.7),15.7,18.10,18.10,236 (20.8),20.8
+229,Dameon Pierce,Dameon Pierce,6,RB79,RB,HOU,186 (16.6),16.6,18.10,18.10,231 (20.3),20.3
+230,Phil Mafah,Phil Mafah,10,RB80,RB,DAL,199 (17.7),17.7,18.10,18.10,228 (19.12),19.12
+231,Devaughn Vele,Devaughn Vele,12,WR82,WR,DEN,213 (18.9),18.9,18.10,18.10,216 (18.12),18.12
+232,SF Team Defense,SF Team Defense,14,DF8,DF,SF,189 (16.9),16.9,18.11,18.11,238 (20.10),20.10
+233,Efton Chism,Efton Chism,14,WR83,WR,NE,190 (16.10),16.10,18.11,18.11,240 (20.12),20.12
+234,Adonai Mitchell,Adonai Mitchell,11,WR84,WR,IND,185 (16.5),16.5,18.12,18.12,237 (20.9),20.9
+235,Harrison Butker,Harrison Butker,10,PK5,PK,KC,194 (17.2),17.2,18.12,18.12,232 (20.4),20.4
+236,Jordan James,Jordan James,14,RB81,RB,SF,185 (16.5),16.5,18.12,18.12,237 (20.9),20.9
+237,DeAndre Hopkins,DeAndre Hopkins,7,WR85,WR,BAL,196 (17.4),17.4,18.12,18.12,238 (20.10),20.10
+238,Malik Washington,Malik Washington,12,WR86,WR,MIA,216 (18.12),18.12,18.12,18.12,216 (18.12),18.12
+239,Raheem Mostert,Raheem Mostert,8,RB82,RB,LV,166 (14.10),14.10,19.1,19.1,239 (20.11),20.11
+240,ARI Team Defense,ARI Team Defense,8,DF9,DF,ARI,193 (17.1),17.1,19.1,19.1,238 (20.10),20.10
+241,Trevor Etienne,Trevor Etienne,14,RB83,RB,CAR,195 (17.3),17.3,19.1,19.1,239 (20.11),20.11
+242,Michael Wilson,Michael Wilson,8,WR87,WR,ARI,166 (14.10),14.10,19.1,19.1,238 (20.10),20.10
+243,Jordan Watkins,Jordan Watkins,14,WR88,WR,SF,217 (19.1),19.1,19.1,19.1,217 (19.1),19.1
+244,Harold Fannin,Harold Fannin,9,TE33,TE,CLE,202 (17.10),17.10,19.2,19.2,235 (20.7),20.7
+245,GB Team Defense,GB Team Defense,5,DF10,DF,GB,208 (18.4),18.4,19.2,19.2,230 (20.2),20.2
+246,Geno Smith,Geno Smith,8,QB27,QB,LV,204 (17.12),17.12,19.3,19.3,237 (20.9),20.9
+247,Calvin Austin,Calvin Austin,5,WR89,WR,PIT,197 (17.5),17.5,19.3,19.3,239 (20.11),20.11
+248,Jaylin Lane,Jaylin Lane,12,WR90,WR,WAS,219 (19.3),19.3,19.3,19.3,219 (19.3),19.3
+249,Ollie Gordon,Ollie Gordon,12,RB84,RB,MIA,208 (18.4),18.4,19.4,19.4,240 (20.12),20.12
+250,Tim Patrick,Tim Patrick,8,WR91,WR,DET,220 (19.4),19.4,19.4,19.4,220 (19.4),19.4
+251,Ka’imi Fairbairn,Ka’imi Fairbairn,6,PK6,PK,HOU,183 (16.3),16.3,19.5,19.5,240 (20.12),20.12
+252,LAR Team Defense,LAR Team Defense,8,DF11,DF,LAR,192 (16.12),16.12,19.5,19.5,238 (20.10),20.10
+253,Noah Gray,Noah Gray,10,TE34,TE,KC,196 (17.4),17.4,19.5,19.5,240 (20.12),20.12
+254,Tyler Lockett,Tyler Lockett,10,WR92,WR,TEN,200 (17.8),17.8,19.5,19.5,240 (20.12),20.12
+255,Dalton Schultz,Dalton Schultz,6,TE35,TE,HOU,201 (17.9),17.9,19.5,19.5,239 (20.11),20.11
+256,Dyami Brown,Dyami Brown,8,WR93,WR,JAC,193 (17.1),17.1,19.5,19.5,240 (20.12),20.12
+257,Michael Mayer,Michael Mayer,8,TE36,TE,LV,221 (19.5),19.5,19.5,19.5,221 (19.5),19.5
+258,KC Team Defense,KC Team Defense,10,DF12,DF,KC,199 (17.7),17.7,19.6,19.6,235 (20.7),20.7
+259,Cam Little,Cam Little,8,PK7,PK,JAC,177 (15.9),15.9,19.7,19.7,240 (20.12),20.12
+260,Isaac TeSlaa,Isaac TeSlaa,8,WR94,WR,DET,197 (17.5),17.5,19.7,19.7,240 (20.12),20.12
+261,Oronde Gadsden,Oronde Gadsden,12,TE37,TE,LAC,210 (18.6),18.6,19.7,19.7,231 (20.3),20.3
+262,Matt Gay,Matt Gay,12,PK8,PK,WAS,197 (17.5),17.5,19.8,19.8,239 (20.11),20.11
+263,Amari Cooper (-),Amari Cooper (-),,WR95,WR,FA,202 (17.10),17.10,19.8,19.8,240 (20.12),20.12
+264,Wil Lutz,Wil Lutz,12,PK9,PK,DEN,206 (18.2),18.2,19.9,19.9,238 (20.10),20.10
+265,Darius Slayton,Darius Slayton,14,WR96,WR,NYG,181 (16.1),16.1,19.9,19.9,240 (20.12),20.12
+266,KeAndre Lambert-Smith,KeAndre Lambert-Smith,12,WR97,WR,LAC,212 (18.8),18.8,19.9,19.9,239 (20.11),20.11
+267,Cole Kmet,Cole Kmet,5,TE38,TE,CHI,205 (18.1),18.1,19.9,19.9,239 (20.11),20.11
+268,Tyquan Thornton,Tyquan Thornton,10,WR98,WR,KC,225 (19.9),19.9,19.9,19.9,225 (19.9),19.9
+269,DAL Team Defense,DAL Team Defense,10,DF13,DF,DAL,215 (18.11),18.11,19.10,19.10,239 (20.11),20.11
+270,Chris Boswell,Chris Boswell,5,PK10,PK,PIT,194 (17.2),17.2,19.11,19.11,240 (20.12),20.12
+271,NYJ Team Defense,NYJ Team Defense,9,DF14,DF,NYJ,205 (18.1),18.1,19.11,19.11,237 (20.9),20.9
+272,Jalen Nailor,Jalen Nailor,6,WR99,WR,MIN,213 (18.9),18.9,19.11,19.11,236 (20.8),20.8
+273,Kayshon Boutte,Kayshon Boutte,14,WR100,WR,NE,227 (19.11),19.11,19.11,19.11,227 (19.11),19.11
+274,DET Team Defense,DET Team Defense,8,DF15,DF,DET,212 (18.8),18.8,19.12,19.12,237 (20.9),20.9
+275,Tyler Loop,Tyler Loop,7,PK11,PK,BAL,196 (17.4),17.4,19.12,19.12,240 (20.12),20.12
+276,Jake Elliott,Jake Elliott,9,PK12,PK,PHI,181 (16.1),16.1,20.1,20.1,240 (20.12),20.12
+277,Evan McPherson,Evan McPherson,10,PK13,PK,CIN,181 (16.1),16.1,20.1,20.1,240 (20.12),20.12
+278,Diontae Johnson,Diontae Johnson,9,WR101,WR,CLE,221 (19.5),19.5,20.1,20.1,237 (20.9),20.9
+279,Ben Sinnott,Ben Sinnott,12,TE39,TE,WAS,215 (18.11),18.11,20.1,20.1,238 (20.10),20.10
+280,Jalen Coker,Jalen Coker,14,WR102,WR,CAR,220 (19.4),19.4,20.2,20.2,239 (20.11),20.11
+281,SEA Team Defense,SEA Team Defense,8,DF16,DF,SEA,207 (18.3),18.3,20.2,20.2,240 (20.12),20.12
+282,LAC Team Defense,LAC Team Defense,12,DF17,DF,LAC,213 (18.9),18.9,20.2,20.2,238 (20.10),20.10
+283,Younghoe Koo,Younghoe Koo,5,PK14,PK,ATL,218 (19.2),19.2,20.2,20.2,240 (20.12),20.12
+284,Tyler Conklin,Tyler Conklin,12,TE40,TE,LAC,215 (18.11),18.11,20.2,20.2,239 (20.11),20.11
+285,Isaiah Davis,Isaiah Davis,9,RB85,RB,NYJ,222 (19.6),19.6,20.2,20.2,235 (20.7),20.7
+286,Alexander Mattison,Alexander Mattison,12,RB86,RB,MIA,231 (20.3),20.3,20.3,20.3,231 (20.3),20.3
+287,CHI Team Defense,CHI Team Defense,5,DF18,DF,CHI,226 (19.10),19.10,20.3,20.3,236 (20.8),20.8
+288,Sam Darnold,Sam Darnold,8,QB28,QB,SEA,229 (20.1),20.1,20.4,20.4,234 (20.6),20.6
+289,NYG Team Defense,NYG Team Defense,14,DF19,DF,NYG,218 (19.2),19.2,20.4,20.4,238 (20.10),20.10
+290,Emanuel Wilson,Emanuel Wilson,5,RB87,RB,GB,232 (20.4),20.4,20.4,20.4,232 (20.4),20.4
+291,Aaron Rodgers,Aaron Rodgers,5,QB29,QB,PIT,232 (20.4),20.4,20.4,20.4,232 (20.4),20.4
+292,WAS Team Defense,WAS Team Defense,12,DF20,DF,WAS,223 (19.7),19.7,20.5,20.5,238 (20.10),20.10
+293,Tyler Higbee,Tyler Higbee,8,TE41,TE,LAR,233 (20.5),20.5,20.5,20.5,233 (20.5),20.5
+294,Will Reichard,Will Reichard,6,PK15,PK,MIN,224 (19.8),19.8,20.5,20.5,240 (20.12),20.12
+295,Jason Sanders,Jason Sanders,12,PK16,PK,MIA,224 (19.8),19.8,20.5,20.5,240 (20.12),20.12
+296,NE Team Defense,NE Team Defense,14,DF21,DF,NE,226 (19.10),19.10,20.5,20.5,237 (20.9),20.9
+297,Jahan Dotson,Jahan Dotson,9,WR103,WR,PHI,233 (20.5),20.5,20.5,20.5,233 (20.5),20.5
+298,Devin Singletary,Devin Singletary,14,RB88,RB,NYG,233 (20.5),20.5,20.6,20.6,235 (20.7),20.7
+299,Tyler Bass,Tyler Bass,7,PK17,PK,BUF,220 (19.4),19.4,20.6,20.6,239 (20.11),20.11
+300,Noah Fant,Noah Fant,10,TE42,TE,CIN,234 (20.6),20.6,20.6,20.6,234 (20.6),20.6
+301,Elijah Moore,Elijah Moore,7,WR104,WR,BUF,232 (20.4),20.4,20.6,20.6,236 (20.8),20.8
+302,CIN Team Defense,CIN Team Defense,10,DF22,DF,CIN,230 (20.2),20.2,20.6,20.6,238 (20.10),20.10
+303,Brandon McManus,Brandon McManus,5,PK18,PK,GB,234 (20.6),20.6,20.6,20.6,234 (20.6),20.6
+304,Daniel Jones,Daniel Jones,11,QB30,QB,IND,235 (20.7),20.7,20.7,20.7,235 (20.7),20.7
+305,Kenneth Gainwell,Kenneth Gainwell,5,RB89,RB,PIT,235 (20.7),20.7,20.7,20.7,235 (20.7),20.7
+306,Chris Brooks,Chris Brooks,5,RB90,RB,GB,235 (20.7),20.7,20.7,20.7,235 (20.7),20.7
+307,Graham Gano,Graham Gano,14,PK19,PK,NYG,235 (20.7),20.7,20.7,20.7,235 (20.7),20.7
+308,Alec Pierce,Alec Pierce,11,WR105,WR,IND,232 (20.4),20.4,20.8,20.8,239 (20.11),20.11
+309,Will Dissly,Will Dissly,12,TE43,TE,LAC,235 (20.7),20.7,20.8,20.8,238 (20.10),20.10
+310,Curtis Samuel,Curtis Samuel,7,WR106,WR,BUF,236 (20.8),20.8,20.8,20.8,236 (20.8),20.8
+311,Ahmani Marshall,Ahmani Marshall,9,RB91,RB,CLE,236 (20.8),20.8,20.8,20.8,236 (20.8),20.8
+312,Jason Myers,Jason Myers,8,PK20,PK,SEA,236 (20.8),20.8,20.8,20.8,236 (20.8),20.8
+313,Xavier Restrepo,Xavier Restrepo,10,WR107,WR,TEN,237 (20.9),20.9,20.9,20.9,237 (20.9),20.9
+314,Nick Westbrook-Ikhine,Nick Westbrook-Ikhine,12,WR108,WR,MIA,237 (20.9),20.9,20.9,20.9,237 (20.9),20.9
+315,Jake Moody,Jake Moody,14,PK21,PK,SF,237 (20.9),20.9,20.9,20.9,237 (20.9),20.9
+316,Andrew Beck,Andrew Beck,9,RB92,RB,NYJ,238 (20.10),20.10,20.10,20.10,238 (20.10),20.10
+317,Jermaine Burton,Jermaine Burton,10,WR109,WR,CIN,239 (20.11),20.11,20.11,20.11,239 (20.11),20.11
+318,Joshua Karty,Joshua Karty,8,PK22,PK,LAR,239 (20.11),20.11,20.11,20.11,239 (20.11),20.11
+319,Khalil Herbert,Khalil Herbert,11,RB93,RB,IND,239 (20.11),20.11,20.11,20.11,239 (20.11),20.11
+320,Hunter Renfrow,Hunter Renfrow,14,WR110,WR,CAR,239 (20.11),20.11,20.11,20.11,239 (20.11),20.11
+321,LV Team Defense,LV Team Defense,8,DF23,DF,LV,240 (20.12),20.12,20.12,20.12,240 (20.12),20.12
+322,Daniel Carlson,Daniel Carlson,8,PK23,PK,LV,239 (20.11),20.11,20.12,20.12,240 (20.12),20.12
+323,Robbie Ouzts,Robbie Ouzts,8,TE44,TE,SEA,240 (20.12),20.12,20.12,20.12,240 (20.12),20.12
+324,Samaje Perine,Samaje Perine,10,RB94,RB,CIN,240 (20.12),20.12,20.12,20.12,240 (20.12),20.12
+0,,,,,,,,,,,,
