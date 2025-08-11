@@ -3,7 +3,7 @@ const $ = (s)=>document.querySelector(s);
 
 
 
-const COLORS = { QB:'qb', RB:'rb', WR:'wr', TE:'te', 'K':'k', 'D/ST':'dst' };
+const COLORS = { QB:'qb', RB:'rb', WR:'wr', TE:'te', 'PK':'k', 'DF':'dst' };
 
 // --- Animation state & helpers ---
 let PREV_STATE = null;
@@ -76,11 +76,24 @@ function renderBoard(state){
   renderBoardFrom(detail, state.teams, state.round);
 }
 
-function renderTop20(state){
-  const { top20, on_the_clock } = state;
-  let html = `<h3>Top 20 Available ${on_the_clock==='You' ? '(your pick)' : ''}</h3>`;
-  html += `<ol class="pool">`;
-  top20.forEach((p,i)=>{
+function renderPool(state){
+  const pool = state.pool || [];
+  const on_the_clock = state.on_the_clock;
+  const filters = state.filters || {};
+  const positions = ['ALL', 'QB', 'RB', 'WR', 'TE', 'FLX', 'DF', 'PK'];
+
+  let html = `<h3>Player Pool ${on_the_clock==='You' ? '(your pick)' : ''}</h3>`;
+
+  // Build dropdown for position filter
+  html += `<label for="posFilter">Filter by position: </label>`;
+  html += `<select id="posFilter" class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">`;
+  positions.forEach(pos => {
+    html += `<option value="${pos}">${pos}</option>`;
+  });
+  html += `</select>`;
+
+  html += `<ol class="pool" id="poolList">`;
+  pool.forEach((p,i)=>{
     html += `<li class="${COLORS[p.pos] || ''}">
       <button class="pick" data-index="${i}" ${on_the_clock!=='You'?'disabled':''}>
         ${p.name} <span class="meta">(${p.pos}, Bye ${p.bye})</span>
@@ -88,6 +101,7 @@ function renderTop20(state){
     </li>`;
   });
   html += `</ol>`;
+
   $("#top20").innerHTML = html;
 
   // Wire pick buttons only if it's user's turn
@@ -114,6 +128,35 @@ function renderTop20(state){
           setStatus('Network error while picking');
         }
       };
+    });
+  }
+
+  // Filter functionality client-side
+  const posFilter = document.getElementById('posFilter');
+  if (posFilter) {
+    posFilter.addEventListener('change', () => {
+      const selected = posFilter.value;
+      const list = document.getElementById('poolList');
+      if (!list) return;
+      Array.from(list.children).forEach((li, idx) => {
+        const player = pool[idx];
+        if (selected === 'ALL') {
+          li.style.display = '';
+        } else if (selected === 'FLX') {
+          // FLX includes RB, WR, TE
+          if (['RB','WR','TE'].includes(player.pos)) {
+            li.style.display = '';
+          } else {
+            li.style.display = 'none';
+          }
+        } else {
+          if (player.pos === selected) {
+            li.style.display = '';
+          } else {
+            li.style.display = 'none';
+          }
+        }
+      });
     });
   }
 }
@@ -175,7 +218,7 @@ async function animateBoardDiff(prevState, nextState){
 
 function updateUI(state){
   animateBoardDiff(PREV_STATE, state).then(() => {
-    renderTop20(state);
+    renderPool(state);
     PREV_STATE = state;
   });
 }

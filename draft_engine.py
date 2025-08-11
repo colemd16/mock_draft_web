@@ -88,8 +88,8 @@ class DraftGame:
         self.board["You"].append(pick)
         self.pick_ptr += 1
 
-    def top20(self):
-        # name + (pos, bye) for UI list
+    def full_pool(self):
+        # name + (pos, bye) for UI list, for all players in pool
         return [
             {
                 "name": p["name"],
@@ -97,7 +97,7 @@ class DraftGame:
                 "bye": p["bye"],
                 "color": COLOR.get(p["position"], "white")
             }
-            for p in self.pool[:20]
+            for p in self.pool
         ]
 
     def board_rows(self):
@@ -119,7 +119,8 @@ class DraftGame:
             "round": self._current_round(),
             "teams": self.team_names,
             "board": self.board_rows(),
-            "top20": self.top20(),
+            "pool": self.full_pool(),
+            "filters": ["ALL", "QB", "RB", "WR", "TE", "FLX", "D/ST", "K"],
             "your_roster": self.board["You"],  # you can render slots client-side
             "on_the_clock": self._current_team(),
         }

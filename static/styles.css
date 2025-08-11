@@ -23,8 +23,8 @@ button.pick:disabled { opacity: 0.5; cursor: not-allowed; }
 .pos-RB  { background: #a5d6a7 !important; }  /* strong green */
 .pos-WR  { background: #fff59d !important; }  /* strong yellow */
 .pos-TE  { background: #b39ddb !important; }  /* strong purple */
-.pos-K   { background: #ffd180 !important; }  /* strong orange */
-.pos-DST { background: #bdbdbd !important; }  /* strong gray */
+.pos-PK   { background: #ffd180 !important; }  /* strong orange */
+.pos-DF { background: #bdbdbd !important; }  /* strong gray */
 
 /* Improve text readability in colored cells */
 .pos-QB .player-name, .pos-RB .player-name, .pos-WR .player-name,
