@@ -5,6 +5,28 @@ const $ = (s)=>document.querySelector(s);
 
 const COLORS = { QB:'qb', RB:'rb', WR:'wr', TE:'te', 'PK':'k', 'DF':'dst' };
 
+// Normalize CSV positions to display-friendly labels
+const NORM_POS = (p)=>{
+  if (!p) return '';
+  const u = (p + '').toUpperCase();
+  if (u === 'DF') return 'D/ST';
+  if (u === 'PK') return 'K';
+  return u;
+};
+
+// Ensure a roster panel exists in the DOM (hidden by default)
+function ensureRosterPanel(){
+  let panel = document.querySelector('#rosterPanel');
+  if (!panel){
+    panel = document.createElement('section');
+    panel.id = 'rosterPanel';
+    panel.className = 'hidden bg-white border border-slate-200 rounded-xl shadow-sm p-4';
+    const board = document.querySelector('#board');
+    if (board) board.insertAdjacentElement('beforebegin', panel);
+  }
+  return panel;
+}
+
 // --- Animation state & helpers ---
 let PREV_STATE = null;
 
@@ -59,10 +81,14 @@ function renderBoardFrom(detail, teams, round){
   };
   let html = `<h2>Draft Board (Round ${round})</h2>`;
   html += `<table class="board"><thead><tr>`;
+  // Add round column header
+  html += `<th></th>`;
   teams.forEach(t => html += `<th>${t}</th>`);
   html += `</tr></thead><tbody>`;
-  (detail || []).forEach(row => {
+  (detail || []).forEach((row, r) => {
     html += `<tr>`;
+    // Add round number column at start of row
+    html += `<td class="round-col">${r + 1}</td>`;
     row.forEach(cell => {
       if (!cell) { html += `<td class="cell"></td>`; return; }
       const posUpper = (cell.pos || '').toUpperCase().replace('/', '');
@@ -173,6 +199,78 @@ function renderPool(state){
   }
 }
 
+function renderRoster(state){
+  const panel = document.querySelector('#rosterPanel');
+  if (!panel || panel.classList.contains('hidden')) return; // Only render when visible
+
+  const picks = Array.isArray(state?.your_roster) ? state.your_roster : [];
+  const roster = picks.map(p => ({
+    name: p.name || p.player_name || '',
+    pos: NORM_POS(p.position || p.pos || ''),
+    bye: p.bye || p.bye_week || ''
+  }));
+
+  const slots = [
+    { label:'QB', pos:'QB', idx:null },
+    { label:'RB', pos:'RB', idx:null },
+    { label:'RB', pos:'RB', idx:null },
+    { label:'WR', pos:'WR', idx:null },
+    { label:'WR', pos:'WR', idx:null },
+    { label:'TE', pos:'TE', idx:null },
+    { label:'FLX', pos:'FLX', idx:null },
+    { label:'FLX', pos:'FLX', idx:null },
+    { label:'D/ST', pos:'D/ST', idx:null },
+    { label:'K', pos:'K', idx:null }
+  ];
+
+  const used = new Array(roster.length).fill(false);
+
+  // Fill strict slots first (QB/RB/WR/TE/K/D/ST)
+  slots.forEach(s => {
+    if (s.pos === 'FLX') return;
+    const i = roster.findIndex((p, idx) => !used[idx] && p.pos === s.pos);
+    if (i !== -1){ s.idx = i; used[i] = true; }
+  });
+
+  // Fill FLX with RB/WR/TE
+  slots.forEach(s => {
+    if (s.pos !== 'FLX') return;
+    const i = roster.findIndex((p, idx) => !used[idx] && (p.pos === 'RB' || p.pos === 'WR' || p.pos === 'TE'));
+    if (i !== -1){ s.idx = i; used[i] = true; }
+  });
+
+  // Bench (remaining, up to 10)
+  const bench = [];
+  for (let i = 0; i < roster.length && bench.length < 10; i++){
+    if (!used[i]) bench.push(i);
+  }
+
+  let html = '<h3 class="text-lg font-semibold mb-3">Your Roster</h3>';
+  html += '<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">';
+
+  // Starters
+  html += '<div>';
+  slots.forEach(s => {
+    const p = s.idx != null ? roster[s.idx] : null;
+    const right = p ? `${p.name}${p.bye?` · ${p.bye}`:''}` : '—';
+    html += `<div class="flex justify-between border-b border-slate-100 py-1"><span class="font-medium">${s.label}</span><span class="text-slate-700">${right}</span></div>`;
+  });
+  html += '</div>';
+
+  // Bench
+  html += '<div>';
+  for (let i = 0; i < 10; i++){
+    const idx = bench[i];
+    const p = idx != null ? roster[idx] : null;
+    const right = p ? `${p.name}${p.pos?` · ${p.pos}`:''}${p.bye?` · ${p.bye}`:''}` : '—';
+    html += `<div class="flex justify-between border-b border-slate-100 py-1"><span class="font-medium">BN</span><span class="text-slate-700">${right}</span></div>`;
+  }
+  html += '</div>';
+
+  html += '</div>';
+  panel.innerHTML = html;
+}
+
 function setStatus(msg) {
   const el = $("#status");
   if (el) el.textContent = msg;
@@ -231,6 +329,7 @@ async function animateBoardDiff(prevState, nextState){
 function updateUI(state){
   animateBoardDiff(PREV_STATE, state).then(() => {
     renderPool(state);
+    renderRoster(state);
     PREV_STATE = state;
   });
 }
@@ -271,6 +370,29 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     };
   }
+
+  // Inject a Roster toggle button next to Restart
+  const rosterBtn = document.createElement('button');
+  rosterBtn.id = 'rosterToggle';
+  rosterBtn.type = 'button';
+  rosterBtn.textContent = 'Roster';
+  rosterBtn.className = 'w-full sm:w-auto inline-flex items-center gap-2 bg-slate-800 text-white px-3 py-2 rounded-md shadow hover:bg-slate-700 focus:outline-none';
+  if (restartBtn && restartBtn.parentElement){
+    restartBtn.insertAdjacentElement('afterend', rosterBtn);
+  }
+
+  // Ensure roster panel exists in DOM
+  ensureRosterPanel();
+  const rosterPanel = document.querySelector('#rosterPanel');
+
+  // Toggle panel visibility and render when shown
+  rosterBtn.onclick = () => {
+    if (!rosterPanel) return;
+    rosterPanel.classList.toggle('hidden');
+    if (!rosterPanel.classList.contains('hidden')){
+      renderRoster(PREV_STATE || {});
+    }
+  };
 
   if (!startBtn) {
     console.warn('Start button (#start) not found');
