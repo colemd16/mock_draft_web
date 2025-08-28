@@ -4,7 +4,7 @@ from draft_engine import DraftGame
 import os
 
 app = Flask(__name__, static_folder="static")
-GAME = DraftGame(players_csv=os.path.join("data", "players5.csv"))
+GAME = DraftGame(players_csv=os.path.join("data", "players6.csv"))
 LAST_SLOT = 4
 
 
